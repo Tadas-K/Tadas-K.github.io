@@ -1,1 +1,1 @@
-Skriptinio programavimo laborai
+# Skriptinio programavimo laborai
