@@ -1,0 +1,113 @@
+html, body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+
+    /* margin: auto; */
+}
+
+body {
+    /* display: grid; */
+    /* grid-template-columns: 100px auto; */
+    /* grid-template-rows: 1fr; */
+    /* grid-template-areas: 'navbar main-body'; */
+
+    /* overflow-x: hidden; */
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.navigation-bar {
+    grid-area: navbar;
+    padding: 20px;
+
+    background-color: rgb(162, 162, 226);
+}
+
+.navigation-bar ul {
+    list-style: none;
+}
+
+/* Tarpai tarp linku */
+.navigation-bar ul > li {
+    padding: 5px;
+}
+
+
+.main-body {
+    grid-area: main-body;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 80px 0;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 3;
+}
+
+.hero img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+.about {
+    margin: auto;
+    padding: 10px;
+}
+
+.about img {
+    height: 500px;
+    width: fit-content;
+    padding: 20px;
+}
+
+.about-conteiner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.cv-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 30px;
+    /* margin: auto; */
+}
+
+.cv-container > div {
+    width: 500px;
+}
