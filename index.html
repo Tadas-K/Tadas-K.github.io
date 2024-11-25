@@ -65,8 +65,10 @@
 
 
             <!-- Resume -->
-            <section>
+            <section class="cv-main">
                 <h2>CV</h2>
+                <button class="light-dark-button">Dark mode</button>
+
                 <div class="cv-container">
 
                     <div class="cls-issilavinimas">
@@ -102,47 +104,58 @@
 
             <section>
                 <h2>Portfolio</h2>
-                <p>Mano asmeniniai projektai bei jų pavyzdžiai</p>
 
-                <ul>
-                    <li>Visi</li>
-                    <li>Muzika</li>
-                    <li>Elektronikos inžinerija</li>
-                    <li>Programinė įranga</li>
-                </ul>
+                <div class="porfolio-container">
+                    <p>Mano asmeniniai projektai bei jų pavyzdžiai</p>
+                    <ul>
+                        <li>Visi</li>
+                        <li>Muzika</li>
+                        <li>Elektronikos inžinerija</li>
+                        <li>Programinė įranga</li>
+                    </ul>
+                </div>
 
-                <img src="/Site_pictures/Paveikslėlis2.jpg" height="181" width="250" alt="Youtube thumbnail">
-                <h4>Youtube klipas</h4>
-                <p>Thunderstruck pianino koveris</p>
+                <div class="project-container">
+                    <div>
+                        <img src="/Site_pictures/Paveikslėlis2.jpg" height="181" width="250" alt="Youtube thumbnail">
+                        <h4>Youtube klipas</h4>
+                        <p>Thunderstruck pianino koveris</p>
+                    </div>
+                    
+                    <div>
+                        <img src="/Site_pictures/Paveikslėlis1.jpg" height="374" width="608" alt="Youtube kanalas">
+                        <h4>Youtube kanalas</h4>
+                        <p>Kiti youtube kanalo klipai</p>
+                    </div>
 
-                <img src="/Site_pictures/Paveikslėlis1.jpg" height="374" width="608" alt="Youtube kanalas">
-                <h4>Youtube kanalas</h4>
-                <p>Kiti youtube kanalo klipai</p>
+                    <div>
+                        <img src="/Site_pictures/Paveikslėlis3.jpg" height="578" width="783" alt="Spausdintinė kameros roboto plokštė">
+                        <h4>Kameros roboto spausdintinė plokštė</h4>
+                        <p>Programuojamas robotas skirtas valdyti kamerą</p>
+                    </div>
 
-                <img src="/Site_pictures/Paveikslėlis3.jpg" height="578" width="783" alt="Spausdintinė kameros roboto plokštė">
-                <h4>Kameros roboto spausdintinė plokštė</h4>
-                <p>Programuojamas robotas skirtas valdyti kamerą</p>
+                    <div>
+                        <img src="/Site_pictures/Paveikslėlis4.jpg" alt="Kameros robotas">
+                        <h4>Kameros robotas</h4>
+                        <p>Programuojamas robotas skirtas valdyti kamerą</p>
+                    </div>
 
-                <img src="/Site_pictures/Paveikslėlis4.jpg" alt="Kameros robotas">
-                <h4>Kameros robotas</h4>
-                <p>Programuojamas robotas skirtas valdyti kamerą</p>
+                    <!-- <img src="">
+                    <h4>SMD litavimo orkaitė</h4>
+                    <p>Programuojama litavimo orkaitė programuojama per wifi</p> -->
 
-                <!-- <img src="">
-                <h4>SMD litavimo orkaitė</h4>
-                <p>Programuojama litavimo orkaitė programuojama per wifi</p> -->
+                    <div>
+                        <img src="/Site_pictures/Logo_512.png" height="256" width="256" alt="Feeguur logo">
+                        <h4>FEEGUUR game</h4>
+                        <p>Android žaidimas publikuotas Google Play</p>
+                    </div>
 
-
-                <img src="/Site_pictures/Logo_512.png" height="256" width="256" alt="Feeguur logo">
-                <h4>FEEGUUR game</h4>
-                <p>Android žaidimas publikuotas Google Play</p>
-
-                <img src="/Site_pictures/2.png" height="480" width="270" alt="Feeguur game play screenshot">
-                <h4>FEEGUUR game</h4>
-                <p>Screenshot iš android žaidimo publikuoto Google Play</p>
-
-
-
-
+                    <div>
+                        <img src="/Site_pictures/2.png" height="480" width="270" alt="Feeguur game play screenshot">
+                        <h4>FEEGUUR game</h4>
+                        <p>Screenshot iš android žaidimo publikuoto Google Play</p>
+                    </div>
+                </div>
             </section>
 
 
@@ -150,26 +163,30 @@
 
             <section>
                 <h2>Paslaugos</h2>
-                <p>Paprastų spausdintinių plokščių projektavimas, 3D spausdinimas,
-                    mikrovaldiklių programavimas, pagalbiniai programavimo darbai,
-                    įvarių elektronikos įtaisų remontas, muzikinių video klipų kūrimas,
-                    filmavimas bei atlikimas. 
-                </p>
 
-                <h3>Feeguur game add</h3>
-                <video controls width="270" height="480">
-                    <source src="/Site_video/First_video.mp4">
-                </video>
+                <div class="paslaugos-container">
+                    <p>Paprastų spausdintinių plokščių projektavimas, 3D spausdinimas,
+                        mikrovaldiklių programavimas, pagalbiniai programavimo darbai,
+                        įvarių elektronikos įtaisų remontas, muzikinių video klipų kūrimas,
+                        filmavimas bei atlikimas. 
+                    </p>
 
-                <h3>Thunderstruck piano cover</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/nk1XAgTmtKY?si=1BEflq6rPbnUO0IA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                
-        
-                <h3>Thunderstruck piano cover - tik audio</h3>
-                <audio controls src="/Site_audio/Thunderstruck_audio.wav"></audio>
+                    <h3>Feeguur game add</h3>
+                    <video controls width="270" height="480">
+                        <source src="/Site_video/First_video.mp4">
+                    </video>
 
+                    <h3>Thunderstruck piano cover</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nk1XAgTmtKY?si=1BEflq6rPbnUO0IA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                
+            
+                    <h3>Thunderstruck piano cover - tik audio</h3>
+                    <audio controls src="/Site_audio/Thunderstruck_audio.wav"></audio>
+                </div>
             </section>
         </main>
-
+    
+        <script src="functions.js"></script>
+        
     </body>
 
 </html>
