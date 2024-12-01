@@ -6,22 +6,32 @@
         <title>Mano "Profesionali" svetainė</title>
 
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
         
     </head>
 
     <body>
         <header id="header" class="navigation-bar">
-            <nav>
+            <button id="navEnableBut" class="nav-menu-enable-button"><span class="material-icons">menu</span></button>
+            
+            <nav class="navigation-buttons">
                 <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#hero"><span class="material-icons">home</span></a></li>
+                    <li><a href="#about"><span class="material-icons">person</span></a></li>
+                    <li><a href="#resume"><span class="material-icons">description</span></a></li>
+                    <li><a href="#portfolio"><span class="material-icons">photo</span></a></li>
+                    <li><a href="#services"><span class="material-icons">build</span></a></li>
+                    <li><a href="#contact"><span class="material-icons">mail</span></a></li>
                 </ul>
             </nav>
         </header>
+
+        <div>
+            <button id="darkModeToggle" class="light-dark-button">
+                <span id="l-d-b-icon" class="material-icons">light_mode</span>
+            </button>
+        <div>
 
 
         <main class="main-body">
@@ -67,8 +77,6 @@
             <!-- Resume -->
             <section class="cv-main">
                 <h2>CV</h2>
-                <button class="light-dark-button">Dark mode</button>
-
                 <div class="cv-container">
 
                     <div class="cls-issilavinimas">
