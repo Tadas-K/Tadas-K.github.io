@@ -13,3 +13,16 @@ document.getElementById('darkModeToggle').addEventListener('click', () => {
 document.getElementById('navEnableBut').addEventListener('click', () => {
     document.body.classList.toggle('hidden');
 });
+
+
+
+const spans = document.querySelectorAll('.navigation-bar span');
+
+spans.forEach(span => {
+    span.addEventListener('mouseenter', () => {
+        span.closest('li').classList.add('active');
+    });
+    span.addEventListener('mouseleave', () => {
+        span.closest('li').classList.remove('active');
+    });
+});

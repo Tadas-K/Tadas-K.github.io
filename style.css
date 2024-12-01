@@ -6,15 +6,20 @@ html, body {
     /* overflow-x: hiddven; */
     width: 100%;
     /* margin: auto; */
+
+    scroll-behavior: smooth;
+
+    /* Perejimas light-dark */
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-body {
-    /* display: grid; */
-    /* grid-template-columns: 100px auto; */
-    /* grid-template-rows: 1fr; */
-    /* grid-template-areas: 'navbar main-body'; */
-    /* overflow-x: hidden; */
-}
+/* body {
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'navbar main-body';
+    overflow-x: hidden;
+} */
 
 .dark-mode {
     background-color: #121212;
@@ -61,7 +66,7 @@ img {
 
 .navigation-bar .navigation-buttons {
     position: fixed;
-    z-index: 2;
+    z-index: 4;
 
     padding: 30px;
     bottom: 0;
@@ -74,6 +79,7 @@ img {
     background-color: #dedede;
 
     transform: translateX(0);
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .hidden .navigation-bar .navigation-buttons {
@@ -99,6 +105,8 @@ header .nav-menu-enable-button {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
 }
 
 .dark-mode header .nav-menu-enable-button {
@@ -111,13 +119,17 @@ header .nav-menu-enable-button {
     background-color: rgb(198, 198, 198);
 }
 
+.dark-mode header .nav-menu-enable-button:hover {
+    background-color: rgb(123, 123, 123);
+}
+
 .nav-menu-enable-button:active {
     background-color: rgb(255, 206, 206);
 }
 
 
 /* Tarpai tarp linku, patraukimas ir spalva*/
-.navigation-bar ul > li {
+.navigation-bar ul > li:not(.logo) {
     list-style: none;
 
     display: flex;
@@ -136,9 +148,17 @@ header .nav-menu-enable-button {
     border-radius: 40px;
 }
 
-.dark-mode .navigation-bar ul > li {
+.navigation-bar ul li.active {
+    background-color: #434343;
+}
+
+.dark-mode .navigation-bar ul li:not(.logo) {
     background-color: #121212;
     border: 1px solid #ccc; 
+}
+
+.dark-mode .navigation-bar ul li.active {
+    background-color: #5e5e5e;
 }
 
 .navigation-bar span {
@@ -191,7 +211,18 @@ header .nav-menu-enable-button {
     background-color: rgb(255, 206, 206);
 }
 
+/* Override logo */
+.logo {
+    list-style: none;
+    position: fixed;
 
+    /* object-fit: contain; */
+    
+    top: 30px;
+    left: 5px;
+    border: none;
+    /* background-color */
+}
 
 
 
@@ -283,9 +314,9 @@ header .nav-menu-enable-button {
     /* justify-content: center; */
 }
 
-.cv-main h2 {
-    /* margin: auto; */
-}
+/*.cv-main h2 {
+    margin: auto;
+}*/
 
 
 .cv-container {
@@ -317,28 +348,73 @@ header .nav-menu-enable-button {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+
+    /* align-items */
 }
 
 .dark-mode .project-container {
-    background-color: #222222;
+    /* background-color: #222222; */
     border-radius: 8px;
 }
 
-.project-container > div {
+
+/* Projektu blokai */
+
+.project-element {
+    position: relative;
+    /* overflow: hidden; */
+    /* vw ir vh - procentaliai ima nuo viso viewport dydzio, geriau, nes absoliutus vienetai */
+    /* width: 28vw; */
     width: 300px;
+    height: fit-content; /* padaro auksti toki, kad viskas prisitemptu iki elementu*/
     padding: 10px;
+
 }
 
-.dark-mode .project-container > div {
+.dark-mode .project-element {
     background-color: #333333;
     color: #e0e0e0;
     border: 1px solid #444444;
 }
 
-.project-container img {
-    max-width: 100%;
-    height: auto;
+.project-element img {
+    position: relative;
+
+    object-fit: contain;
 }
+
+.project-text-elements {
+    position: absolute;
+    width: 100%;
+    padding-left: 10px;
+    
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+
+    background-color: #ebebeb;
+    
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.dark-mode .project-text-elements {
+    background-color: #222222;
+}
+
+
+
+.project-text-elements:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+
+
+
+
+
+
 
 
 
@@ -346,4 +422,44 @@ header .nav-menu-enable-button {
 
 .paslaugos-container {
     text-align: center;
+}
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+    margin: 10px 0;
+}
+
+footer .insta-container {
+    width: 50px;
+    height: 50px;
+
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.dark-mode footer .insta-container {
+    background-color: #dedede;
+}
+
+
+footer .insta-container a {
+    /* position: relative; */
+    width:fit-content;
+    height: fit-content;
+}
+
+
+
+footer img {
+    height: 100%;
+    width: 100%;
 }

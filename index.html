@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        
     </head>
 
     <body>
@@ -17,6 +16,7 @@
             
             <nav class="navigation-buttons">
                 <ul>
+                    <li class="logo"><a href=""><img src="Site_pictures/logo.png"></li>
                     <li><a href="#hero"><span class="material-icons">home</span></a></li>
                     <li><a href="#about"><span class="material-icons">person</span></a></li>
                     <li><a href="#resume"><span class="material-icons">description</span></a></li>
@@ -37,7 +37,7 @@
         <main class="main-body">
             <!-- Intro -->
 
-            <section class="hero">
+            <section id="hero" class="hero">
                 <img src="Site_pictures/FB_IMG_1525243317287.jpg" alt="Intro nuotrauka" class="intro-img">
 
                 <div class="hero-container">
@@ -50,7 +50,7 @@
 
             <!-- About -->
 
-            <section class="about">
+            <section id="about" class="about">
                 <h2>Apie</h2>
                 <p>Esu 2 kurso elektronikos inžinerijos studentas Vilnius TECH universitete</p>
 
@@ -75,7 +75,7 @@
 
 
             <!-- Resume -->
-            <section class="cv-main">
+            <section id="resume" class="cv-main">
                 <h2>CV</h2>
                 <div class="cv-container">
 
@@ -110,7 +110,7 @@
 
             <!-- Portfolio -->
 
-            <section>
+            <section id="portfolio">
                 <h2>Portfolio</h2>
 
                 <div class="porfolio-container">
@@ -123,45 +123,59 @@
                     </ul>
                 </div>
 
+
+                <!-- PROJEKTAI -->
                 <div class="project-container">
-                    <div>
+                    <div class="project-element">
                         <img src="/Site_pictures/Paveikslėlis2.jpg" height="181" width="250" alt="Youtube thumbnail">
-                        <h4>Youtube klipas</h4>
-                        <p>Thunderstruck pianino koveris</p>
+                        <div class="project-text-elements">
+                            <h4>Youtube klipas</h4>
+                            <p>Thunderstruck pianino koveris</p>
+                        </div>
                     </div>
                     
-                    <div>
+                    <div class="project-element">
                         <img src="/Site_pictures/Paveikslėlis1.jpg" height="374" width="608" alt="Youtube kanalas">
-                        <h4>Youtube kanalas</h4>
-                        <p>Kiti youtube kanalo klipai</p>
+                        <div class="project-text-elements">
+                            <h4>Youtube kanalas</h4>
+                            <p>Kiti youtube kanalo klipai</p>
+                        </div>
                     </div>
 
-                    <div>
+                    <div class="project-element">
                         <img src="/Site_pictures/Paveikslėlis3.jpg" height="578" width="783" alt="Spausdintinė kameros roboto plokštė">
-                        <h4>Kameros roboto spausdintinė plokštė</h4>
-                        <p>Programuojamas robotas skirtas valdyti kamerą</p>
+                        <div class="project-text-elements">
+                            <h4>Kameros roboto spausdintinė plokštė</h4>
+                            <p>Programuojamas robotas skirtas valdyti kamerą</p>
+                        </div>
                     </div>
 
-                    <div>
+                    <div class="project-element">
                         <img src="/Site_pictures/Paveikslėlis4.jpg" alt="Kameros robotas">
-                        <h4>Kameros robotas</h4>
-                        <p>Programuojamas robotas skirtas valdyti kamerą</p>
+                        <div class="project-text-elements">
+                            <h4>Kameros robotas</h4>
+                            <p>Programuojamas robotas skirtas valdyti kamerą</p>
+                        </div>
                     </div>
 
                     <!-- <img src="">
                     <h4>SMD litavimo orkaitė</h4>
                     <p>Programuojama litavimo orkaitė programuojama per wifi</p> -->
 
-                    <div>
+                    <div class="project-element">
                         <img src="/Site_pictures/Logo_512.png" height="256" width="256" alt="Feeguur logo">
-                        <h4>FEEGUUR game</h4>
-                        <p>Android žaidimas publikuotas Google Play</p>
+                        <div class="project-text-elements">
+                            <h4>FEEGUUR game</h4>
+                            <p>Android žaidimas publikuotas Google Play</p>
+                        </div>
                     </div>
 
-                    <div>
+                    <div class="project-element">
                         <img src="/Site_pictures/2.png" height="480" width="270" alt="Feeguur game play screenshot">
-                        <h4>FEEGUUR game</h4>
-                        <p>Screenshot iš android žaidimo publikuoto Google Play</p>
+                        <div class="project-text-elements">
+                            <h4>FEEGUUR game</h4>
+                            <p>Screenshot iš android žaidimo publikuoto Google Play</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -169,7 +183,7 @@
 
             <!-- Services -->
 
-            <section>
+            <section id="services">
                 <h2>Paslaugos</h2>
 
                 <div class="paslaugos-container">
@@ -192,6 +206,15 @@
                 </div>
             </section>
         </main>
+
+        <footer>
+            <div><h2>Tadas Kiaunė</h2></div>
+            <div class="insta-container">
+                <a href="https://www.instagram.com/ttadaske/">
+                    <img src="https://cdn-icons-png.flaticon.com/512/748/748145.png">
+                </a>
+            </div>
+        </footer>
     
         <script src="functions.js"></script>
         
