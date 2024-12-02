@@ -26,3 +26,21 @@ spans.forEach(span => {
         span.closest('li').classList.remove('active');
     });
 });
+
+
+
+// Laikrodis
+const timeParagraph = document.getElementById('clockParagraph');
+
+setInterval(() => {
+    let date = new Date();
+
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+
+    timeString = `${hours<10 ? "0" : ""}${hours}:${minutes<10 ? "0": ""}${date.getMinutes()}:${seconds<10? "0" : ""}${date.getSeconds()}`;
+
+    timeParagraph.textContent = timeString;
+
+}, 1000);

@@ -470,3 +470,9 @@ footer .math-container {
 footer .svg-container {
     width: 100%;
 }
+
+footer #clockParagraph {
+    padding: 20px;
+    margin: 0px;
+    font-size: 40pt;
+}
