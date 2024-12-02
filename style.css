@@ -428,6 +428,13 @@ header .nav-menu-enable-button {
 
 
 /* Forma */
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 
 
