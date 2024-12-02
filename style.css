@@ -427,6 +427,45 @@ header .nav-menu-enable-button {
 
 
 
+/* Forma */
+
+
+
+.form-container .form-Cls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: warp;
+    flex-direction: column;
+}
+
+.form-container input {
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form-container .input-fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-container button {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #eeeeee;
+
+}
+
+
+
+
+
+
+
+
+
 
 footer {
     display: flex;
